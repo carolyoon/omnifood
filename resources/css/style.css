@@ -105,6 +105,20 @@ h2:after {
   margin-bottom: 10px;
 }
 
+.icon-small {
+  color: #e67e22;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 120%;
+
+  /*secrets to align text and icons */
+  line-height: 120%;
+  vertical-align: middle; 
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
 /* ---- BUTTONS ----*/
 .button:link,
 .button:visited {
@@ -296,8 +310,15 @@ header {
 /* ----------------------------------- */
 /* CITY LOCATIONS */
 /* ----------------------------------- */
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
 
-
+.city-features {
+  margin-bottom: 5px;
+}
 
 
 
