@@ -1,3 +1,7 @@
+/* 
+Orange color: #e67e22;
+
+
 
 
 /* ----------------------------------- */
@@ -10,7 +14,8 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
@@ -19,7 +24,7 @@ html {
   text-rendering: optimizeLegibility;
 }
  
-.clearfix {zoom:1}
+.clearfix {zoom:1;}
 .clearfix:after {
   content: '.';
   clear: both;
@@ -27,6 +32,7 @@ html {
   height: 0;
   visibility: hidden;
 }
+
 /* ----------------------------------- */
 /* RESUABLE COMPONENTS */
 /* ----------------------------------- */
@@ -88,8 +94,8 @@ h2:after {
 /* ---- PARAGRAPHS ----*/
 .long-copy {
   line-height: 145%;
-  width: 50%;
-  margin-left: 25%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .box p {
@@ -111,14 +117,30 @@ h2:after {
   display: inline-block;
   text-align: center;
   font-size: 120%;
+  margin-right: 10px;
 
   /*secrets to align text and icons */
   line-height: 120%;
   vertical-align: middle; 
   margin-top: -5px;
-  margin-right: 10px;
 }
 
+/* ---- LINKS ----*/
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1 px solid #e67e22;
+  transition: border-bottom 0.2s, color: 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
 /* ---- BUTTONS ----*/
 .button:link,
 .button:visited {
@@ -186,6 +208,7 @@ header {
   margin-top: 20px;
 }
 
+/* Main navi */
 .main-nav {
   float: right;
   list-style: none;
@@ -217,7 +240,7 @@ header {
 /* FEATURES */
 /* ----------------------------------- */
 .section-features .long-copy {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 /* ----------------------------------- */
 /* MEALS */
@@ -299,6 +322,11 @@ header {
   float: left;
   font-size: 150%;
   margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+  border: 0 ;
 }
 
 .btn-app img {
